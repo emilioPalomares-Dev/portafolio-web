@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Portfolio - Setup Required</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0066CC 0%, #00A3FF 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #0066CC;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        p {
+            color: #1A1A1A;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .code {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+
+        .steps {
+            margin: 20px 0;
+        }
+
+        .step {
+            margin: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .step::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0066CC;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🤖 Portfolio Setup Required</h1>
+
+        <p>Your robotics portfolio is almost ready! To run the application, you need to install the dependencies first.
+        </p>
+
+        <div class="warning">
+            <strong>⚠️ Node.js Required</strong><br>
+            Make sure you have Node.js (v16 or higher) installed on your system.
+        </div>
+
+        <div class="steps">
+            <h2 style="color: #0066CC; margin-bottom: 15px;">Setup Steps:</h2>
+            <div class="step">Open a terminal in this directory</div>
+            <div class="step">Run: <code
+                    style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm install</code></div>
+            <div class="step">Run: <code
+                    style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run dev</code></div>
+            <div class="step">Open the URL shown in the terminal</div>
+        </div>
+
+        <div class="code">
+            # Quick start commands:<br>
+            npm install<br>
+            npm run dev
+        </div>
+
+        <p style="margin-top: 20px;">
+            <strong>Need help?</strong> Check the README.md file for detailed instructions and customization options.
+        </p>
+    </div>
+</body>
+
+</html>
